@@ -28,6 +28,10 @@ public class Main {
         System.out.println("TODO:");
 
         VervoerStrategy ufo = spits -> 20;
+        mijnReis.simuleerReis(ufo);
         System.out.println(ufo.berekenReistijd(false));
+
+        VervoerStrategy ezel = spits -> 450;
+        mijnReis.simuleerReis(ezel);
     }
 }
