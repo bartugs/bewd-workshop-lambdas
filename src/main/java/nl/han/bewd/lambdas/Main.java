@@ -26,5 +26,8 @@ public class Main {
 
         System.out.println("Met <nieuw> vervoer, lambda edition! (Stap 5)");
         System.out.println("TODO:");
+
+        VervoerStrategy ufo = spits -> 20;
+        System.out.println(ufo.berekenReistijd(false));
     }
 }
